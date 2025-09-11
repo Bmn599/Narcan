@@ -1,0 +1,385 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="utf-8" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;Texas Narcan (Naloxone) Toolkit&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="description" content="Student led Narcan (naloxone) toolkit for The University of Texas at Austin. Recognize an overdose, how to use Narcan nasal spray, where to get it on campus, training, FAQs, and resources." /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta property="og:title" content="UT Austin Narcan Toolkit" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta property="og:description" content="Recognize an overdose, use Narcan, find it on campus, trainings, FAQs, and resources." /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta property="og:type" content="website" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="theme-color" content="#BF5700" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>:root{</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--ut-orange:#BF5700;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--ut-orange-600:#a24a00;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--ut-cream:#FFF7ED;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--ink:#111111;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--muted:#575757;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--ring:rgba(191,87,0,.25);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--bg:#ffffff;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--card:#ffffff;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--focus: 0 0 0 3px var(--ring);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>*{box-sizing:border-box}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>html,body{height:100%}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>body{</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin:0; font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color:var(--ink); background:var(--bg); line-height:1.6;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>a{color:var(--ut-orange); text-decoration:none}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>a:hover{text-decoration:underline}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Header */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.nav{</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position:sticky; top:0; z-index:50; backdrop-filter:saturate(180%) blur(6px);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background:rgba(255,255,255,.95); border-bottom:1px solid #ececec;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.nav-inner{max-width:1100px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; padding:12px 20px}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.brand{display:flex; gap:12px; align-items:center}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.logo{width:36px; height:36px; border-radius:10px; background:conic-gradient(from 210deg, var(--ut-orange), #ffb074, var(--ut-orange));}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.brand h1{font-size:18px; margin:0; line-height:1.1; letter-spacing:.2px}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.nav a{font-weight:600}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.nav-links{display:flex; gap:14px; flex-wrap:wrap}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.nav-links a{padding:8px 10px; border-radius:10px}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.nav-links a:hover{background:#f6f6f6}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Hero: animated linear gradient with scrim for readability */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hero{</p>
+<p class="p1"><span class="Apple-converted-space">      </span>position:relative; overflow:hidden; border-bottom:1px solid #f0e7de;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: linear-gradient(270deg, #FFF7ED, #FFE7D4, #FFD2B0, #FFC596, #FFE7D4, #FFF7ED);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background-size: 1200% 1200%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>animation: heroGradient 24s ease-in-out infinite;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hero::after{</p>
+<p class="p1"><span class="Apple-converted-space">      </span>content:""; position:absolute; inset:0; pointer-events:none;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>/* White scrim to guarantee text contrast at all times */</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: linear-gradient(180deg, rgba(255,255,255,0.90), rgba(255,255,255,0.86));</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hero-inner{max-width:1100px; margin:0 auto; padding:64px 20px 44px; position:relative; z-index:1}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.eyebrow{display:inline-block; background:#fff; border:1px solid #f0e7de; color:var(--ut-orange); font-weight:700; padding:6px 12px; border-radius:999px; margin-bottom:14px}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hero h2{font-size:40px; line-height:1.15; margin:0 0 10px; color:var(--ink)}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hero p{max-width:800px; font-size:18px; color:#2b2b2b; margin:0 0 18px}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.cta-row{display:flex; gap:12px; flex-wrap:wrap; margin-top:16px}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.btn{display:inline-block; padding:12px 16px; border-radius:12px; border:1px solid #e7e1da; background:#fff; font-weight:600}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.btn.primary{background:var(--ut-orange); color:#fff; border-color:transparent}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.btn.primary:hover{background:var(--ut-orange-600)}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.btn.outline:hover{background:#faf7f3}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>@keyframes heroGradient{</p>
+<p class="p1"><span class="Apple-converted-space">      </span>0%{background-position:0% 50%}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>50%{background-position:100% 50%}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>100%{background-position:0% 50%}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Sections */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>section{scroll-margin-top:84px}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.wrap{max-width:1100px; margin:0 auto; padding:36px 20px}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.section-title{font-size:28px; margin:0 0 12px; color:var(--ink)}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.sub{color:var(--muted); margin:0 0 24px}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.cards{display:grid; grid-template-columns:repeat(12,1fr); gap:16px}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.card{grid-column:span 12; background:var(--card); border:1px solid #eee; border-radius:16px; padding:18px}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.card h3{margin:0 0 8px}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.note{font-size:14px; color:var(--muted)}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>@media (min-width:720px){</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.card.span-6{grid-column:span 6}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.card.span-4{grid-column:span 4}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Step list */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.steps{counter-reset:n}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.step{display:flex; gap:14px; align-items:flex-start; padding:12px 0; border-top:1px dashed #eee}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.step:first-child{border-top:none}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.badge{counter-increment:n; width:28px; height:28px; border-radius:8px; background:var(--ut-orange); color:#fff; font-weight:700; display:grid; place-items:center; flex-shrink:0}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Details (FAQ) */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>details{border:1px solid #eee; border-radius:12px; padding:14px 16px; background:#fff}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>details+details{margin-top:10px}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>summary{cursor:pointer; font-weight:600}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>details[open]{outline: 2px solid #f4ede6}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Footer */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>footer{border-top:1px solid #eee; background:#faf9f7}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.footer-inner{max-width:1100px; margin:0 auto; padding:20px}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.small{font-size:13px; color:#555}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Utilities */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.pill{display:inline-block; padding:4px 10px; border-radius:999px; background:#fff3e8; color:#8a3d00; border:1px solid #ffe2c7; font-weight:600}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.grid-2{display:grid; gap:16px}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>@media (min-width:860px){.grid-2{grid-template-columns:1.1fr .9fr}}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Back to top */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.top{position:fixed; right:18px; bottom:18px; padding:10px 12px; border-radius:12px; background:#fff; border:1px solid #eee; font-weight:700; display:none}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.top.show{display:inline-block}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.top:hover{background:#fafafa}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Reduced motion */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>@media (prefers-reduced-motion: reduce){</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.hero{animation:none}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;header class="nav" aria-label="Main"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="nav-inner"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="brand"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="logo" aria-hidden="true"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h1&gt;Texas Narcan Toolkit&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;nav class="nav-links"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="#recognize"&gt;Recognize&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="#use"&gt;Use Narcan&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="#where"&gt;Where to Get It&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="#training"&gt;Training&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="#faq"&gt;FAQ&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="#resources"&gt;Resources&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/nav&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/header&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;main&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section class="hero"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="hero-inner"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2&gt;Recognize an overdose. Act fast. Keep our campus safe.&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>This student led guide shows you how to spot the signs of an opioid overdose and use</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;strong&gt;Narcan (naloxone) 4 mg nasal spray&lt;/strong&gt;. It also lists on campus options to get naloxone and training.</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="cta-row"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;a class="btn primary" href="#use"&gt;How to use Narcan&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;a class="btn outline" href="#where"&gt;Find naloxone near UT&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="note" style="margin-top:12px"&gt;In an emergency, call &lt;strong&gt;911&lt;/strong&gt; immediately.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="recognize" class="wrap"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2 class="section-title"&gt;Recognize the signs of an opioid overdose&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="sub"&gt;If you suspect an overdose, call 911. Then follow the steps below.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="cards"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;article class="card span-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h3&gt;Common signs&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;Unresponsive, cannot be woken up&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;Slow, shallow, or no breathing, gurgling or snoring sounds&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;Pale, clammy skin, blue or gray lips or fingertips&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;Pinpoint pupils&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/article&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;article class="card span-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h3&gt;What to do first&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;Call &lt;strong&gt;911&lt;/strong&gt; and state possible opioid overdose&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;Lay the person on their back and clear the airway&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;Be ready to start rescue breathing if needed&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;Give naloxone as soon as it is available&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/article&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="use" class="wrap"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="grid-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h2 class="section-title"&gt;How to use Narcan nasal spray 4 mg&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p class="sub"&gt;One device equals one dose. If there is no response in 2 to 3 minutes, give another dose with a new device.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="steps"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="step"&gt;&lt;div class="badge" aria-hidden="true"&gt;&lt;/div&gt;&lt;div&gt;&lt;strong&gt;Call 911&lt;/strong&gt;. If available, ask someone nearby to grab naloxone and an AED.&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="step"&gt;&lt;div class="badge" aria-hidden="true"&gt;&lt;/div&gt;&lt;div&gt;&lt;strong&gt;Lay on back, tilt head&lt;/strong&gt;. Support the neck. Insert tip into a nostril until your fingers touch the nose.&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="step"&gt;&lt;div class="badge" aria-hidden="true"&gt;&lt;/div&gt;&lt;div&gt;&lt;strong&gt;Press plunger firmly&lt;/strong&gt; to release the dose. Remove the device after spraying.&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="step"&gt;&lt;div class="badge" aria-hidden="true"&gt;&lt;/div&gt;&lt;div&gt;&lt;strong&gt;Start rescue breathing&lt;/strong&gt; if not breathing normally. Give 1 breath every 5 to 6 seconds. If trained and needed, provide chest compressions.&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="step"&gt;&lt;div class="badge" aria-hidden="true"&gt;&lt;/div&gt;&lt;div&gt;&lt;strong&gt;Repeat in 2 to 3 minutes&lt;/strong&gt; with a new device if there is little or no response or if breathing slows again.&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="step"&gt;&lt;div class="badge" aria-hidden="true"&gt;&lt;/div&gt;&lt;div&gt;&lt;strong&gt;Stay with the person&lt;/strong&gt; until help arrives. Place them in the recovery position if they start breathing on their own.&lt;/div&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p class="note" style="margin-top:10px"&gt;Naloxone has a short effect. Symptoms can return. Monitor closely and be ready to give another dose.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;aside class="card" aria-label="Important safety notes"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;span class="pill" aria-hidden="true"&gt;Important&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;Naloxone will not harm someone if opioids are not present.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;Store at room temperature. Check expiration dates.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;Good Samaritan protections vary by state. Know your local policy.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/aside&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="where" class="wrap"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2 class="section-title"&gt;Where to get naloxone near UT Austin&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="sub"&gt;Availability changes. Call or check the linked pages to confirm. Many Texas pharmacies can dispense naloxone without an individual prescription under a standing order.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="cards"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;article class="card span-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h3&gt;On campus and UT affiliated&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;University Health Services UHS. Ask about naloxone access and brief education.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;a href="https://shift.utexas.edu/operation-naloxone.html" target="_blank" rel="noopener"&gt;Operation Naloxone UT College of Pharmacy&lt;/a&gt;. Awareness, trainings, and where to access naloxone.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/article&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;article class="card span-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h3&gt;Community options&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;a href="https://www.austintexas.gov/department/preventing-opioid-overdose" target="_blank" rel="noopener"&gt;City of Austin Preventing Opioid Overdose&lt;/a&gt;. Local guidance and resources.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;Nearby pharmacies, chains and independents around campus corridors. Call to confirm stock and insurance coverage.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;Harm reduction organizations with free kits at select events. See Training section for local partners.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/article&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="note"&gt;If you have naloxone, keep it accessible, check expiration dates, and consider carrying two doses.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="training" class="wrap"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2 class="section-title"&gt;Training and preparedness&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="cards"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;article class="card span-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h3&gt;Get trained&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;a href="https://www.traviscountytx.gov/news/2025/2787-free-narcan-use-training" target="_blank" rel="noopener"&gt;Travis County Free Narcan use training&lt;/a&gt;. Periodic community training opportunities.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;a href="https://txoti.org/" target="_blank" rel="noopener"&gt;Texas Overdose Naloxone Initiative TONI&lt;/a&gt;. Breathe Now training and curriculum.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;a href="https://shift.utexas.edu/operation-naloxone.html" target="_blank" rel="noopener"&gt;Operation Naloxone UT&lt;/a&gt;. Campus focused education and distribution info.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/article&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;article class="card span-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h3&gt;Build a kit&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;Two Narcan 4 mg devices&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;Face shield for rescue breathing&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;Nitrile gloves and a pocket card with quick steps&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/article&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="faq" class="wrap"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2 class="section-title"&gt;Frequently asked questions&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;details&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;summary&gt;Can naloxone be used on someone who is not overdosing on opioids&lt;/summary&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Yes. Naloxone targets opioid receptors and will not harm someone if opioids are not involved.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/details&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;details&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;summary&gt;How long does naloxone last&lt;/summary&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Its effects can wear off in 30 to 90 minutes. Breathing may slow again. Monitor and repeat doses as needed.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/details&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;details&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;summary&gt;What should I expect after giving naloxone&lt;/summary&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;The person may wake up disoriented or in withdrawal. Keep them safe, explain what happened, and wait for EMS.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/details&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="resources" class="wrap"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2 class="section-title"&gt;Evidence and resources&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="cards"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;article class="card span-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h3&gt;Why this matters for UT students&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;About &lt;strong&gt;1 in 5&lt;/strong&gt; students reported lifetime nonmedical use of at least one prescription medication class in a large multi campus study. Addictive Behaviors 2004.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;Many students first opportunities to try prescription opioids occur after matriculation. College is a key window for initial exposure.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;Family focused prevention ISFP in adolescence showed a &lt;strong&gt;65 percent relative reduction&lt;/strong&gt; in prescription opioid misuse by age 25. AJPH 2012.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p class="note"&gt;These findings support campus level education, easy naloxone access, and evidence based prevention.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/article&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;article class="card span-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;h3&gt;Local info and free trainings&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;a href="https://www.austintexas.gov/department/preventing-opioid-overdose" target="_blank" rel="noopener"&gt;City of Austin Preventing Opioid Overdose&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;a href="https://www.traviscountytx.gov/news/2025/2787-free-narcan-use-training" target="_blank" rel="noopener"&gt;Travis County Free Narcan use training&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;a href="https://txoti.org/" target="_blank" rel="noopener"&gt;Texas Overdose Naloxone Initiative TONI&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;a href="https://shift.utexas.edu/operation-naloxone.html" target="_blank" rel="noopener"&gt;Operation Naloxone UT College of Pharmacy&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/article&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h3 style="margin-top:18px"&gt;Referenced studies DOIs&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;&lt;a href="https://doi.org/10.1080/07448481.2018.1549049" target="_blank" rel="noopener"&gt;Opioid overdose in university settings Journal of American College Health 2018&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;&lt;a href="https://doi.org/10.1016/j.addbeh.2004.08.024" target="_blank" rel="noopener"&gt;Prevalence of nonmedical use among college students Addictive Behaviors 2004&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;&lt;a href="https://doi.org/10.1016/j.addbeh.2014.03.008" target="_blank" rel="noopener"&gt;Trends in prescription medication misuse in college Addictive Behaviors 2014&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;&lt;a href="https://doi.org/10.1080/08897070802418451" target="_blank" rel="noopener"&gt;Contexts and initiation of prescription opioid misuse in college Substance Use and Misuse 2009&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;&lt;a href="https://doi.org/10.2105/AJPH.2012.301209" target="_blank" rel="noopener"&gt;Effect of ISFP on later prescription drug misuse American Journal of Public Health 2012&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/main&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;footer&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="footer-inner"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="small"&gt;Educational resource created by UT Austin students. This site is not a substitute for professional medical advice. In an emergency, call &lt;strong&gt;911&lt;/strong&gt;.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/footer&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;button id="toTop" class="top" aria-label="Back to top"&gt;↑ Top&lt;/button&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>// Smooth scroll for same-page links</p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.querySelectorAll('a[href^="#"]').forEach(a=&gt;{</p>
+<p class="p1"><span class="Apple-converted-space">      </span>a.addEventListener('click', e=&gt;{</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const id = a.getAttribute('href').slice(1);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const el = document.getElementById(id);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>if(el){ e.preventDefault(); el.scrollIntoView({behavior:'smooth', block:'start'}); }</p>
+<p class="p1"><span class="Apple-converted-space">      </span>});</p>
+<p class="p1"><span class="Apple-converted-space">    </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>// Back to top button</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const topBtn = document.getElementById('toTop');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const onScroll = () =&gt; window.scrollY &gt; 300 ? topBtn.classList.add('show') : topBtn.classList.remove('show');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>window.addEventListener('scroll', onScroll, {passive:true});</p>
+<p class="p1"><span class="Apple-converted-space">    </span>topBtn.addEventListener('click', ()=&gt; window.scrollTo({top:0, behavior:'smooth'}));</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>// Keyboard focus ring helper</p>
+<p class="p1"><span class="Apple-converted-space">    </span>let mouseDown = false;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.addEventListener('mousedown', ()=&gt; mouseDown = true);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.addEventListener('keydown', ()=&gt; mouseDown = false);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.addEventListener('focusin', (e)=&gt;{</p>
+<p class="p1"><span class="Apple-converted-space">      </span>if(!mouseDown) e.target.style.boxShadow = 'var(--focus)';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>});</p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.addEventListener('focusout', (e)=&gt; e.target.style.boxShadow = 'none');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>// Replace dash punctuation in visible text nodes with a space</p>
+<p class="p1"><span class="Apple-converted-space">    </span>// Replaces em dash (—), en dash (–), and spaced hyphen ( - ) only in text content</p>
+<p class="p1"><span class="Apple-converted-space">    </span>(function replaceDashes(){</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>acceptNode: (node) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">          </span>// Skip whitespace-only nodes and nodes inside scripts/styles</p>
+<p class="p1"><span class="Apple-converted-space">          </span>if(!node.nodeValue.trim()) return NodeFilter.FILTER_REJECT;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>let p = node.parentNode;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>while(p){</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if(p.nodeName === 'SCRIPT' || p.nodeName === 'STYLE' || p.nodeName === 'NOSCRIPT') return NodeFilter.FILTER_REJECT;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>p = p.parentNode;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>}</p>
+<p class="p1"><span class="Apple-converted-space">          </span>return NodeFilter.FILTER_ACCEPT;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>});</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const toUpdate = [];</p>
+<p class="p1"><span class="Apple-converted-space">      </span>let n;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>while(n = walker.nextNode()){ toUpdate.push(n); }</p>
+<p class="p1"><span class="Apple-converted-space">      </span>toUpdate.forEach(node=&gt;{</p>
+<p class="p1"><span class="Apple-converted-space">        </span>let t = node.nodeValue;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Replace space dash space, space en dash space, space em dash space with single space</p>
+<p class="p1"><span class="Apple-converted-space">        </span>t = t.replace(/\s[-–—]\s/g, ' ');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Replace standalone em/en dashes with a space</p>
+<p class="p1"><span class="Apple-converted-space">        </span>t = t.replace(/[–—]/g, ' ');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>node.nodeValue = t;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>});</p>
+<p class="p1"><span class="Apple-converted-space">    </span>})();</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
